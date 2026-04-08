@@ -1,0 +1,7 @@
+resource_group_name = "rg-seppmail-prod"
+location            = "westeurope"
+name_prefix         = "securemail"
+smtp_allowed_sources = [
+  "203.0.113.10/32",
+  "203.0.113.11/32"
+]

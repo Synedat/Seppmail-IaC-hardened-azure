@@ -1,97 +1,48 @@
 # Seppmail-IaC-hardened-azure
 
-**Public partner repository by Synedat for Terraform-based Azure infrastructure patterns around a hardened SEPPmail SecureMail deployment.**
+> Terraform Infrastructure-as-Code for a hardened SecureMail deployment in Azure.
 
-This repository is intended to host **Terraform Infrastructure-as-Code (IaC)** for a hardened **SEPPmail Secure E-Mail Gateway / SecureMail** deployment in Microsoft Azure.
+**Partner resource by Synedat for the SEPPmail ecosystem.**
 
-> [!IMPORTANT]
-> This repository currently provides a **public-ready repository scaffold and documentation baseline**. It does **not** yet contain a production deployment module.
+## Why this repository exists
 
-## Purpose
+Starter repository for a hardened Azure landing zone and deployment blueprint for SEPPmail-related workloads.
 
-The goal of this repository is to provide a clean, partner-grade starting point for Azure deployments that follow security-first infrastructure patterns:
+This repository is structured for public consumption and easy discovery across topics such as SEPPmail, Exchange Online, Microsoft 365, Azure, API automation, PowerShell and operational runbooks.
 
-- restricted inbound exposure
-- documented network security rules
-- role-based access design
-- reproducible Terraform structure
-- separation of platform, network, and workload concerns
-- alignment with official SEPPmail deployment guidance
+## Included content
 
-## Intended scope
+- `main.tf`
+- `variables.tf`
+- `outputs.tf`
+- `terraform.tfvars.example`
 
-A future implementation can cover topics such as:
+## Quick start
 
-- Azure resource group layout
-- virtual network and subnet design
-- network security groups
-- public and private IP handling
-- hardened access to admin interfaces
-- storage and disk configuration
-- tagging, diagnostics, and monitoring hooks
-- parameterisation for lab, project, and production stages
+1. Use the repository as a hardened starter, not as a drop-in production template.
+2. Replace placeholder IP ranges, hostnames, secrets and RBAC scopes.
+3. Add organization-specific policy, monitoring and backup controls before live usage.
 
-## Suggested repository structure
+## Official SEPPmail references
 
-```text
-.
-├── .github/
-├── docs/
-│   ├── architecture.md
-│   ├── references.md
-│   └── security-baseline.md
-├── examples/
-│   └── synedat-partner-lab/
-├── modules/
-│   ├── network/
-│   ├── security/
-│   └── vm/
-├── CONTRIBUTING.md
-├── README.md
-└── SECURITY.md
-```
+- [Exchange Online configuration](https://docs.seppmail.com/en/09_ht_mso365_06_exchange-online-configuration.html)
+- [High availability and load balancing](https://docs.seppmail.com/en/03_wp_03_sa_06_ha__high-availability-loadbalancing.html)
 
-## Azure hardening themes
+## Publishing notes
 
-For public documentation and future Terraform modules, the following baseline themes are recommended:
+- keep repository description and topics aligned with `.github/repository-profile.md`
+- add a concise repository subtitle in GitHub
+- use consistent Synedat branding across all public SEPPmail repositories
+- keep customer-specific values out of the public repository
 
-### 1. Restrict inbound SMTP
+## About Synedat
 
-Where SEPPmail is used with Exchange Online, port 25 should only be reachable from the expected Exchange Online relaying sources or other explicitly approved systems.
+Synedat publishes practical, reusable assets around software engineering, IT operations, cloud integration and automation.
 
-### 2. Protect administrative access
+- Website: https://www.synedat.com/
+- Company profile: https://www.synedat.com/en/
 
-Administrative access should be deliberately constrained. Public exposure should be minimised, and management access paths should be documented separately from mail-flow paths.
+## Partner note
 
-### 3. Make mail flow explicit
+This repository is published by Synedat as a partner-oriented resource for the SEPPmail ecosystem. Product ownership, roadmap and official support remain with SEPPmail.
 
-Document which interfaces and security rules are used for:
-
-- inbound mail
-- outbound mail
-- administrative access
-- optional support access
-- monitoring or diagnostics
-
-### 4. Keep infrastructure reproducible
-
-Use Terraform modules with clear variables, safe defaults, tagging standards, and environment separation.
-
-## Example Synedat positioning
-
-A concise public partner text for this repository can be:
-
-> *Synedat develops secure, maintainable, and operationally transparent infrastructure patterns for SEPPmail-related Azure environments.*
-
-## Official documentation references
-
-Start with the official SEPPmail documentation before implementing Terraform modules:
-
-- [Spin up a SEPPmail VM in the Azure Portal](https://docs.seppmail.com/en/09_ht_msazure_seppmail_vm_setup.html)
-- [Exchange Online Configuration](https://docs.seppmail.com/en/09_ht_mso365_06_exchange-online-configuration.html)
-- [Securing the SEPPmail Secure E-Mail Gateway](https://docs.seppmail.com/en/09_ht_tenant_securing-seppmail.html)
-- [Network Settings Of The SEPPmail Secure E-Mail Gateway Appliance](https://docs.seppmail.com/en/04_com_06_bc_01_ns_03_network-settings-of-the-seppmail-appliance.html)
-
-## Partner notice
-
-This repository is structured as a **Synedat partner repository** in the SEPPmail ecosystem. It should be presented publicly as complementary implementation guidance, not as a replacement for official vendor product documentation.

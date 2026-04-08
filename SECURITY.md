@@ -1,17 +1,12 @@
 # Security Policy
 
-This repository is expected to contain infrastructure guidance and Terraform code.
+Please do **not** publish secrets, API tokens, certificates, private keys, customer hostnames or tenant-specific identifiers in issues or pull requests.
 
-## Never publish
+## Reporting a vulnerability
+If you discover a security issue in one of these examples, please report it privately to the repository owner before opening a public issue.
 
-- private keys
-- secrets or token values
-- real NSG source allowlists without approval
-- production hostnames, FQDNs, or customer identifiers
-- internal network diagrams with sensitive detail
-
-## Reporting concerns
-
-Please do not use public issues for security-sensitive findings.
-
-Route product-specific vulnerabilities through the responsible vendor channel and project-specific concerns through the responsible delivery or security process.
+## Safe usage notes
+- treat all scripts as examples and validate them in a non-production environment first
+- review access scopes, RBAC permissions and firewall rules carefully
+- rotate credentials after testing if a secret was exposed accidentally
+- adapt logging so that no sensitive content is written to console output or log files

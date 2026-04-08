@@ -1,27 +1,24 @@
 # Contributing
 
-This repository is intended for public-safe infrastructure guidance and Terraform-ready structure.
+Thanks for your interest in improving this repository.
 
-## Expected contribution types
-
-- architecture notes
-- Terraform module structure
-- example variable files with placeholders only
-- hardening notes
+## What we welcome
+- fixes and clarifications
+- better examples and safer defaults
 - documentation improvements
+- scripts that reduce operational effort
 
-## Public-safe rules
+## Before you open a pull request
+1. Keep examples generic and reusable.
+2. Do not commit customer secrets, tokens, certificates or tenant identifiers.
+3. Prefer small, reviewable changes with a short explanation.
+4. Add or update documentation when behaviour changes.
 
-Do not commit:
+## Quality expectations
+- use descriptive file names
+- include prerequisites and rollback notes for operational scripts
+- mark placeholders clearly
+- avoid vendor lock-in where practical
 
-- customer subscriptions or tenant IDs
-- real public IPs, certificates, or secrets
-- customer hostnames
-- project-specific diagrams that should remain private
-
-## Style
-
-- prefer small, reusable modules
-- document every exposed port and security rule
-- keep examples generic
-- explain production assumptions explicitly
+## Security
+If your change has a security impact, see `SECURITY.md` first.
