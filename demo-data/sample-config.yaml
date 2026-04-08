@@ -1,0 +1,14 @@
+environment: demo
+repository: Seppmail-IaC-hardened-azure
+partner: SEPPmail
+maintainer: Synedat Group GmbH
+focus: Terraform starter for hardened Azure deployments supporting secure mail workloads
+controls:
+  - ISO/IEC 27001
+  - BAIT
+  - DORA
+  - TISAX
+  - NIS2
+notes:
+  - Example configuration only
+  - Adjust permissions and network ranges before production use

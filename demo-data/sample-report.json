@@ -1,0 +1,7 @@
+{
+  "workspace": "prod-demo",
+  "policyChecks": "passed",
+  "hardeningProfile": "standard",
+  "drift": "none",
+  "evidenceId": "tf-demo-011"
+}

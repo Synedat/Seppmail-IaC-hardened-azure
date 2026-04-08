@@ -1,0 +1,5 @@
+metric,value,unit
+Policy check pass rate,81,demo
+Hardening coverage,82,demo
+Module validation,83,demo
+Baseline drift status,84,demo
