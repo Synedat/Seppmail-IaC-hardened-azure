@@ -1,4 +1,4 @@
 title: Seppmail-IaC-hardened-azure
-description: Terraform starter for hardened Azure deployment patterns around SEPPmail-adjacent messaging infrastructure.
+description: Customer-facing Azure Terraform starter for hardened SEPPmail-related deployment and integration patterns, positioned for Synedat-led workshops and implementation conversations.
 theme: minima
 markdown: kramdown
