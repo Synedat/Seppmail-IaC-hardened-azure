@@ -2,17 +2,29 @@
 
 ## Short pitch
 
-Terraform starter content for hardened Azure landing-zone style deployments for SecureMail workloads.
+Azure Terraform starter for hardened SEPPmail-related deployment and integration patterns, positioned for Synedat-led workshops, architecture reviews and implementation preparation.
 
 ## Extended copy
 
-Seppmail-IaC-hardened-azure is a public Synedat repository for practitioners who want practical guidance, examples and structured documentation around SEPPmail-related operations, integration and secure delivery patterns.
+Seppmail-IaC-hardened-azure is a public Synedat repository for customers and practitioners who want to discuss how SEPPmail-related secure mail workloads can be embedded into a hardened Azure target architecture.
 
-The content is written to be useful for architects, administrators, platform engineers and security-conscious delivery teams working with Microsoft 365, Azure, APIs, automation and regulated IT environments.
+The repository is intentionally written as a bridge between **vendor product context** and **real implementation work**. It helps move the conversation from feature awareness to infrastructure design, hardening scope, RBAC decisions, observability planning and rollout preparation.
+
+## Suggested hero message
+
+Build the Azure target pattern behind your SEPPmail-related secure mail project.
+Use this repository to structure architecture workshops, Terraform baselines and hardening conversations with Synedat.
 
 ## Suggested CTA blocks
 
-- Start with the README and demo scenarios
-- Review architecture, permissions and control mapping
-- Use examples and runbooks as a starting point for your own environment
-- Follow official SEPPmail documentation for product-specific details
+- Start with the README and landing-page assets
+- Review architecture, RBAC, hardening and operations guidance
+- Use the workshop kit to scope a pilot or implementation phase
+- Follow the official SEPPmail product and partner pages for vendor source material
+
+## Suggested trust statements
+
+- engineered to support reviewable Azure implementation conversations
+- designed for regulated or security-sensitive environments
+- aligned with public SEPPmail product context and official references
+- structured so Synedat is visible as the delivery and workshop contact

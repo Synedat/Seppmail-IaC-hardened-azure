@@ -1,35 +1,37 @@
 # Seppmail-IaC-hardened-azure
 
-Terraform starter for hardened Azure deployment patterns around SEPPmail-adjacent messaging infrastructure.
+Azure Terraform starter for hardened SEPPmail-related deployment and integration patterns.
 
 ## Why this repository exists
 
-Use this repository as a secure starting point for opinionated Azure deployments with operational controls in mind.
+This repository is designed as a **customer-facing Synedat asset** for discovery, architecture and delivery conversations around Azure environments that host or integrate with SEPPmail-related secure mail workloads.
 
 ## What you will find here
 
-- Architecture and implementation notes
-- Security, compliance and control mapping content
-- Example scripts and reusable patterns
-- Operations, troubleshooting and observability guidance
-- Demo scenarios, release notes and community entry points
+- Azure-oriented hardening and Terraform starter material
+- architecture and implementation notes
+- security, compliance and control-mapping content
+- operations, troubleshooting and observability guidance
+- workshop-ready copy and landing-page assets
+- official-source reference lists for product and partner context
 
-## Audience
+## Who this is for
 
-Terraform users, cloud security engineers and platform architects.
+- cloud architects
+- platform engineers
+- security engineers
+- IT operations teams
+- project teams preparing SEPPmail-related Azure implementations
 
-## Focus areas
+## How to use it in customer conversations
 
-terraform baselines, security guardrails, diagnostics, network segmentation and hardened deployment structure
+Use this repository when you want to move from product interest to implementation planning:
 
-## Recommended reading order
-
-1. `README.md`
-2. `docs/ARCHITECTURE.md`
-3. `docs/SECURITY-AND-COMPLIANCE.md`
-4. `docs/OPERATIONS.md`
-5. `docs/DEMO-SCENARIOS.md`
+1. explain the Azure target pattern
+2. discuss hardening, RBAC and evidence requirements
+3. show Terraform starter structure and rollout assumptions
+4. define next steps for workshop, pilot or project setup
 
 ## Synedat
 
-Synedat provides consulting, engineering and delivery support around secure, resilient and operationally mature IT platforms. This repository is structured to be useful for public learning, partner delivery and internal engineering reuse.
+Synedat provides consulting, engineering and delivery support around secure, resilient and operationally mature IT platforms. In this repository, Synedat is intentionally visible as the implementation and workshop contact layer for SEPPmail-related Azure projects.

@@ -3,20 +3,22 @@
 This repository is prepared so it can be presented both as a GitHub repository and as a simple GitHub Pages landing page.
 
 ## Recommended sections
-1. Hero message with partner positioning and one-line value statement
-2. Quick links to quick start, architecture, permissions and operations
-3. Demo block with example outputs and workshop kit
-4. Governance block with security disclosure, code of conduct and roadmap
-5. Synedat section with contact path and related repositories
+1. Hero message with Synedat workshop and delivery positioning
+2. Official SEPPmail product image with source note
+3. Quick links to README, architecture, RBAC, operations and workshop kit
+4. Customer-oriented value blocks for Azure hardening, Terraform baselines and rollout preparation
+5. Source and governance block with vendor references and repository trust signals
+6. Synedat section with contact path and related repositories
 
 ## Hero message example
-**Seppmail-IaC-hardened-azure** helps teams with **Terraform starter for hardened Azure deployments supporting secure mail workloads** in a way that is operationally structured, security-aware and easy to adapt.
+**Seppmail-IaC-hardened-azure** helps teams turn SEPPmail-related Azure discussions into a concrete hardening, Terraform and implementation plan.
 
 ## Search-friendly phrases
-terraform azure, hardened azure, seppmail iac, security baseline, synedat
+terraform azure, hardened azure, seppmail on azure, seppmail microsoft 365, security baseline, synedat, azure landing zone, secure email gateway
 
 ## Cross-links
 - `docs/index.md`
 - `docs/LANDING-PAGE-COPY.md`
 - `docs/COMMUNITY-AND-SOCIAL.md`
 - `docs/SHOWCASE-IDEAS.md`
+- `docs/IMAGE-SOURCES.md`

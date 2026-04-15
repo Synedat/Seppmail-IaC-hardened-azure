@@ -1,19 +1,22 @@
 # Seppmail-IaC-hardened-azure Wiki
 
-Terraform starter for hardened Azure deployment patterns around SEPPmail-adjacent messaging infrastructure.
+Azure Terraform starter for hardened SEPPmail-related deployment and integration patterns.
 
 ## Suggested wiki structure
 
-- Architecture overview
-- Environment assumptions
-- Deployment or runbook steps
-- Troubleshooting notes
-- Change record templates
-- Frequently asked questions
+- executive overview for customer and delivery conversations
+- architecture overview
+- Azure environment assumptions
+- deployment or runbook steps
+- troubleshooting notes
+- change record templates
+- frequently asked questions
 
 ## Start here
 
 - README
+- docs/LANDING-PAGE-COPY.md
 - docs/ARCHITECTURE.md
 - docs/OPERATIONS.md
 - docs/TROUBLESHOOTING.md
+- docs/SEPPMAIL-REFERENCES.md

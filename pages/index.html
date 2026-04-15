@@ -3,45 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seppmail-IaC-hardened-azure demo</title>
+  <title>Seppmail-IaC-hardened-azure</title>
   <style>
     body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f8fafc; color:#0f172a; }
-    header { background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; padding:48px 64px; }
-    main { max-width:1100px; margin:0 auto; padding:32px; }
+    header { background:linear-gradient(135deg,#0f172a,#1d4ed8); color:white; padding:56px 64px; }
+    main { max-width:1180px; margin:0 auto; padding:32px; }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:center; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
-    .card { background:white; border:1px solid #cbd5e1; border-radius:18px; padding:20px; box-shadow:0 8px 24px rgba(15,23,42,.06); }
-    code, pre { background:#e2e8f0; border-radius:10px; padding:2px 6px; }
-    pre { padding:16px; overflow:auto; }
+    .card { background:white; border:1px solid #cbd5e1; border-radius:18px; padding:22px; box-shadow:0 8px 24px rgba(15,23,42,.06); }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    .btn { display:inline-block; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:700; }
+    .btn-primary { background:#2563eb; color:white; }
+    .btn-secondary { background:white; color:#0f172a; border:1px solid rgba(255,255,255,.35); }
     .pill { display:inline-block; background:#dbeafe; color:#1d4ed8; padding:8px 12px; border-radius:999px; margin-right:8px; margin-bottom:8px; }
+    .product { background:white; border-radius:20px; padding:18px; color:#0f172a; box-shadow:0 14px 40px rgba(15,23,42,.18); }
+    .product img { width:100%; border-radius:14px; display:block; }
+    .muted { color:#475569; font-size:14px; }
+    ul { padding-left:20px; }
+    @media (max-width: 900px) { .hero { grid-template-columns:1fr; } header { padding:40px 24px; } main { padding:24px; } }
   </style>
 </head>
 <body>
 <header>
-  <h1>Seppmail-IaC-hardened-azure</h1>
-  <p>Terraform-based hardening baseline for Azure-centric SEPPmail delivery conversations.</p>
-  <p>Maintained by Synedat Group GmbH in the SEPPmail partner ecosystem.</p>
+  <div class="hero">
+    <div>
+      <p><strong>Synedat sales engineering asset for SEPPmail-related Azure projects</strong></p>
+      <h1>Seppmail-IaC-hardened-azure</h1>
+      <p>Use this repository to turn SEPPmail product interest into a concrete Azure architecture, hardening and Terraform implementation conversation.</p>
+      <p>Position Synedat clearly as the workshop, design and delivery contact for Azure target patterns, security controls, RBAC, observability and rollout preparation.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="../README.md">Open README</a>
+        <a class="btn btn-secondary" href="../docs/LANDING-PAGE-COPY.md">Review landing-page copy</a>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://www.seppmail.com/wp-content/uploads/2021/02/Produkt-SEG.jpg" alt="Official SEPPmail Secure Email Gateway product image" />
+      <p class="muted">Image origin: official SEPPmail Secure Email Gateway product image. See <code>docs/IMAGE-SOURCES.md</code> for origin and usage note.</p>
+    </div>
+  </div>
 </header>
 <main>
   <section class="grid">
-    <div class="card"><h2>Focus</h2><p>Terraform starter for hardened Azure deployments supporting secure mail workloads</p></div>
-    <div class="card"><h2>Demo story</h2><p>Explain how network segmentation, policy checks and baseline controls shape a hardened design.</p></div>
-    <div class="card"><h2>Public value</h2><p>Use this repository as a credible technical starter for architecture reviews, operations onboarding, controlled demos and reusable engineering conversations.</p></div>
+    <div class="card"><h2>What this page sells</h2><p>A secure Azure target pattern for SEPPmail-related workloads backed by Terraform structure, hardening logic and delivery-ready documentation.</p></div>
+    <div class="card"><h2>What Synedat contributes</h2><p>Architecture workshops, implementation planning, landing-zone alignment, RBAC design, rollout preparation and operations-aware delivery support.</p></div>
+    <div class="card"><h2>Why customers care</h2><p>They can move from product understanding to a reviewable Azure design with clearer controls, responsibilities, evidence paths and deployment assumptions.</p></div>
   </section>
+
   <section>
-    <h2>Metrics to show</h2>
-    <span class="pill">Policy check pass rate</span><span class="pill">Hardening coverage</span><span class="pill">Module validation</span><span class="pill">Baseline drift status</span>
+    <h2>Talk tracks for customer meetings</h2>
+    <span class="pill">Azure landing zone</span>
+    <span class="pill">Terraform baseline</span>
+    <span class="pill">Network segmentation</span>
+    <span class="pill">RBAC and least privilege</span>
+    <span class="pill">Observability and evidence</span>
+    <span class="pill">SEPPmail-related secure mail workloads</span>
   </section>
+
   <section class="grid">
-    <div class="card"><h2>Sample report</h2><pre>{
-  "workspace": "prod-demo",
-  "policyChecks": "passed",
-  "hardeningProfile": "standard",
-  "drift": "none",
-  "evidenceId": "tf-demo-011"
-}</pre></div>
-    <div class="card"><h2>Useful next extensions</h2><ul><li>terraform-docs starter</li><li>security baseline matrix</li><li>HTML environment summary</li><li>naming convention module</li></ul></div>
+    <div class="card">
+      <h2>Typical workshop entry points</h2>
+      <ul>
+        <li>SEPPmail-related Azure target architecture review</li>
+        <li>Terraform starter for hardening and repeatability</li>
+        <li>Security and compliance design conversation</li>
+        <li>Migration or pilot preparation workshop</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Official SEPPmail themes reflected here</h2>
+      <ul>
+        <li>automatic encryption and decryption</li>
+        <li>support for S/MIME, OpenPGP, TLS and SSL</li>
+        <li>high availability and clustering</li>
+        <li>monitoring, reporting and LDAP/AD integration</li>
+        <li>Azure and Microsoft 365 deployment options</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recommended next step</h2>
+      <p>Use this repository as the structure for a short customer workshop and translate the product discussion into concrete Azure design decisions, work packages and delivery assumptions.</p>
+    </div>
   </section>
-  <section class="card"><h2>Synedat</h2><p>Synedat Group GmbH works across software engineering, cloud, infrastructure, operations and security-related implementation topics. The public repository family is intentionally structured so teams can discover, evaluate and adapt working material quickly.</p><p><a href="https://www.synedat.com/">www.synedat.com</a></p></section>
+
+  <section class="card">
+    <h2>Source note</h2>
+    <p>This repository uses official SEPPmail public pages as the source of truth for product and partner-program context. Source links and image origins are documented in <code>docs/SEPPMAIL-REFERENCES.md</code> and <code>docs/IMAGE-SOURCES.md</code>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Synedat</h2>
+    <p>Synedat Group GmbH works across software engineering, cloud, infrastructure, operations and security-related implementation topics. In this repository family, public repositories are intentionally used as customer-facing delivery starters.</p>
+    <p><a href="https://www.synedat.com/">www.synedat.com</a></p>
+  </section>
 </main>
 </body>
 </html>
